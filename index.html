@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100vh;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      #add-course-button {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Grade Calculator</h1>
+      <div id="course-list"></div>
+      <button id="add-course-button">Add Course</button>
+    </div>
+
+    <div id="add-course-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <form id="course-form">
+          <h2>Add Course</h2>
+          <div class="form-group">
+            <label for="course-name-input">Course Name:</label>
+            <input type="text" id="course-name-input" required />
+          </div>
+
+          <div class="row">
+            <div class="column">
+              <div class="form-group">
+                <label for="current-grade-input">Current Grade:</label>
+                <input
+                  type="number"
+                  id="current-grade-input"
+                  min="0"
+                  max="100"
+                  required
+                />
+              </div>
+            </div>
+            <div class="column">
+              <div class="form-group">
+                <label for="goal-grade-input">Goal Grade:</label>
+                <input
+                  type="number"
+                  id="goal-grade-input"
+                  min="0"
+                  max="100"
+                  required
+                />
+              </div>
+            </div>
+            <div class="column">
+              <div class="form-group">
+                <label for="exam-weight-input">Exam Weight:</label>
+                <input
+                  type="number"
+                  id="exam-weight-input"
+                  min="0"
+                  max="100"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="buttons">
+            <button type="submit" class="submit-button">Add</button>
+            <button type="button" class="cancel-button">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
