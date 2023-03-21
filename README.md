@@ -1,10 +1,10 @@
-## Grade Calculator with Multiple Courses
+# Grade Calculator with Multiple Courses
 This is a simple web application that allows users to calculate their grades for multiple courses based on their assignments and exams scores. The application is built using HTML, CSS, and JavaScript.
 
-# Getting Started
+## Getting Started
 To get started with the Grade Calculator, simply open the index.html file in your web browser. The application is designed to be run locally on your computer.
 
-# Usage
+## Usage
 To use the Grade Calculator, follow these steps:
 
 * Enter the number of courses you are taking and click the "Add Courses" button.
